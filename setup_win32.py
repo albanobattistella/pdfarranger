@@ -56,12 +56,13 @@ def addicons():
         'places/folder-videos',
         'places/user-trash',
     ]
+
     for i in icons:
         addfile(os.path.join('share/icons/Adwaita/16x16/', i + '-symbolic.symbolic.png'))
-    icons24 = ['document-save-as', 'edit-delete', 'list-add', 'object-rotate-left',
-               'object-rotate-right', 'zoom-in', 'zoom-out']
+    icons24 = ['document-save', 'document-save-as', 'insert-image', 'object-rotate-left',
+               'object-rotate-right', 'open-menu', 'zoom-in', 'zoom-out']
     for i in icons24:
-        addfile(os.path.join('share/icons/Adwaita/24x24/legacy', i + '.png'))
+        addfile(os.path.join('share/icons/Adwaita/24x24/actions', i + '-symbolic.symbolic.png'))
 
 
 required_dlls = [
